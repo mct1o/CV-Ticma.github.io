@@ -1,0 +1,109 @@
+*{
+       box-sizing: border-box;
+       font-family: 'Courgette', cursive;
+    }
+ 
+header
+{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: rgba(128, 128, 128, 30%); 
+}
+    
+   
+    img{
+        object-fit: contain;
+        padding: 1px;
+        width: 400px;
+        border-radius: 100%; 
+    }
+        
+    img:hover{
+        background-color: blueviolet;
+
+    }
+    
+        
+      
+    
+        address {
+            display:flex;
+            flex-direction: row;
+            justify-content:space-around ;
+            background-color: rgba(184, 205, 224, 0.3);
+            font-size: 40px;
+            
+       
+       
+     }
+     
+     address #linkedin:hover
+     {
+        color: rgba(43, 40, 242, 0.7);
+        background-color:whitesmoke;
+        border-style:outset;
+        
+    
+       
+     }
+     address #telefono:hover{
+        color: rgba(38, 247, 34, 0.7);
+        background-color:whitesmoke;
+        border-style:outset;
+        
+     
+       
+     }
+     address #gmail:hover{
+        color: rgba(246, 175, 10, 0.7);
+        background-color:whitesmoke;
+        border-style:outset;
+        --fa-bounce:1;
+        
+     }
+    
+.flex-container{
+            
+                display: flex;
+                flex-direction:row;
+        }
+        
+        .flex-container h3 {
+            border-bottom: 2px solid rgba(28,110,164,0.65);
+            color: black;
+            font-size: 20px;
+            font-weight: bold;
+            }
+ .flex-itemInformacion
+ {
+    flex:20%;
+    background-color: orange;
+    padding: 40px;
+    text-align: left;
+    align-items: baseline;
+    
+
+ }
+
+ .flex-itemExperiencia{
+    flex:80%;
+    background-color: violet;
+    padding: 40px;
+    text-align: left;
+    align-items: baseline;
+    
+ }
+
+ @media (max-width:600px){
+
+     .flex-container{
+        flex-direction: column;
+    }
+    .flex-container article {
+        flex:100%;
+    }
+  
+ }
